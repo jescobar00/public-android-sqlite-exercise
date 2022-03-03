@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="20dp"
+	tools:context=".FragmentListado">
+
+	<TextView
+		android:id="@+id/tvTituloFormListado"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="30dp"
+		android:gravity="center_horizontal"
+		android:text="Lista de Artículos"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<!--    android:fillViewport="true" -->
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		android:layout_below="@+id/tvTituloFormListado">
+		<GridView
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/grdListadoArticulos"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alignmentMode="alignBounds"
+			android:columnCount="2"
+			android:numColumns="2"
+			android:horizontalSpacing="2dp"
+			android:verticalSpacing="2dp"
+			android:stretchMode="columnWidth"
+			android:gravity="center"
+			android:layout_alignParentTop="true"
+			android:adjustViewBounds="true"
+			android:background="#c2c5cc"
+			>
+		</GridView>
+	</ScrollView>
+
+</LinearLayout>
